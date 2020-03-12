@@ -97,42 +97,83 @@ textarea {
 
 
 html {
-  background-color: #000000;
+  background-color: #33cccc;
   height: 100%;
+  width: 100%;
 }
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
-  padding: 3em;
-  font-size: .75em;
-  height: 100%;
+  font-family: 'Libre Franklin', sans-serif;
+  padding: 0 3em;
+  font-size: 1.25em;
+  color: #fff;
+  display: flex;
+  justify-content: center;
 }
 
-.wrapper {
+.flex-container {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  align-items: center;
-  font-weight: 500;
+  max-width: 1200px;
 }
 
-.div-1, .div-2, .div-3 {
+p span {
+  font-family: 'Lora', sans-serif;
+}
+
+header,
+footer {
+  width: 100%;
   display: flex;
-  width: 25%;
+  justify-content: flex-start;
+}
+
+header h1 {
+  font-family: 'Lora', serif;
+  font-size: 3em;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 1em;
+}
+
+main p {
+  font-size: 1.3em;
+}
+
+.flex-items {
+  display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
   line-height: 1.5em;
-  font-size: 1.6em;
-  background-color: #000000;
-  height: 275px;
+  padding: 2em 2em 2em 0;
 }
 
-.div-1, .div-2 {
-  border-right: .5px solid #505050;
-  padding-right: 75px;
+#div-1, #div-2, #div-3 {
+  width: 28%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
 }
 
+#div-1 p, #div-2 p {
+  border-right: .25px solid #e6e6e6;
+  padding-right: 2em;
+}
+
+footer {
+  border-top: 1px solid #fff;
+}
+
+footer i {
+  padding: 30px 20px 0 0;
+}
 
 /* ==========================================================================
    Helper classes
